@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 760" width="880" height="760" font-family="'Comic Sans MS','Segoe Print','Bradley Hand','Chalkboard SE',cursive">
+  <defs>
+    <!-- hand-drawn wobble -->
+    <filter id="rough" filterUnits="userSpaceOnUse" x="-20" y="-20" width="920" height="800">
+      <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- cross-hatch fills -->
+    <pattern id="hatchYellow" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#fff7dc"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#f0cf6b" stroke-width="2"/>
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#f0cf6b" stroke-width="2"/>
+    </pattern>
+    <pattern id="hatchBlue" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#e8f4fd"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#8ec9ee" stroke-width="2"/>
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#8ec9ee" stroke-width="2"/>
+    </pattern>
+    <pattern id="hatchOlive" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#f2f5da"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#cbd77f" stroke-width="2"/>
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#cbd77f" stroke-width="2"/>
+    </pattern>
+    <pattern id="hatchPink" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#fdeaea"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#f3b6b6" stroke-width="2"/>
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#f3b6b6" stroke-width="2"/>
+    </pattern>
+    <pattern id="hatchGreen" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#e8f7ec"/>
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#a8ddb8" stroke-width="2"/>
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#a8ddb8" stroke-width="2"/>
+    </pattern>
+
+    <!-- arrow heads -->
+    <marker id="redArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e03131"/>
+    </marker>
+    <marker id="blueArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1971c2"/>
+    </marker>
+    <marker id="greenArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f9e44"/>
+    </marker>
+  </defs>
+
+  <rect width="880" height="760" fill="#ffffff"/>
+
+  <!-- ================= main vector ================= -->
+  <g filter="url(#rough)">
+    <rect x="55" y="25" width="775" height="80" rx="20" fill="url(#hatchYellow)"
+          stroke="#1e1e1e" stroke-width="2.2" stroke-dasharray="9 7"/>
+  </g>
+  <text x="442" y="79" text-anchor="middle" font-size="31" fill="#1e1e1e">Vector</text>
+
+  <!-- ================= m measure arrows ================= -->
+  <g stroke="#e03131" stroke-width="2.6" stroke-linecap="round" filter="url(#rough)">
+    <line x1="80"  y1="141" x2="118" y2="141" marker-start="url(#redArrow)"/>
+    <line x1="158" y1="141" x2="212" y2="141" marker-end="url(#redArrow)"/>
+    <line x1="268" y1="141" x2="306" y2="141" marker-start="url(#redArrow)"/>
+    <line x1="346" y1="141" x2="405" y2="141" marker-end="url(#redArrow)"/>
+    <line x1="462" y1="141" x2="500" y2="141" marker-start="url(#redArrow)"/>
+    <line x1="540" y1="141" x2="600" y2="141" marker-end="url(#redArrow)"/>
+    <line x1="655" y1="141" x2="694" y2="141" marker-start="url(#redArrow)"/>
+    <line x1="734" y1="141" x2="793" y2="141" marker-end="url(#redArrow)"/>
+  </g>
+  <g font-size="20" fill="#e03131" text-anchor="middle">
+    <text x="138" y="148">m</text>
+    <text x="326" y="148">m</text>
+    <text x="520" y="148">m</text>
+    <text x="714" y="148">m</text>
+  </g>
+
+  <!-- ================= split lines ================= -->
+  <g stroke="#1e1e1e" stroke-width="2.4" stroke-linecap="round" filter="url(#rough)">
+    <line x1="80"  y1="163" x2="112" y2="266"/>
+    <line x1="212" y1="163" x2="196" y2="266"/>
+    <line x1="268" y1="163" x2="300" y2="266"/>
+    <line x1="405" y1="163" x2="388" y2="266"/>
+    <line x1="462" y1="163" x2="500" y2="266"/>
+    <line x1="600" y1="163" x2="588" y2="266"/>
+    <line x1="655" y1="163" x2="696" y2="266"/>
+    <line x1="793" y1="163" x2="780" y2="266"/>
+  </g>
+
+  <!-- ================= sub-vector boxes ================= -->
+  <g filter="url(#rough)">
+    <rect x="100" y="270" width="115" height="55" rx="12" fill="url(#hatchBlue)" stroke="#1e1e1e" stroke-width="2.2"/>
+    <rect x="288" y="270" width="115" height="55" rx="12" fill="url(#hatchBlue)" stroke="#1e1e1e" stroke-width="2.2"/>
+    <rect x="490" y="270" width="115" height="55" rx="12" fill="url(#hatchBlue)" stroke="#1e1e1e" stroke-width="2.2"/>
+    <rect x="683" y="270" width="115" height="55" rx="12" fill="url(#hatchBlue)" stroke="#1e1e1e" stroke-width="2.2"/>
+  </g>
+  <g font-size="21" fill="#1e1e1e" text-anchor="middle">
+    <text x="157" y="305">u1</text>
+    <text x="345" y="305">u2</text>
+    <text x="547" y="305">u3</text>
+    <text x="740" y="305">u4</text>
+  </g>
+
+  <!-- ================= caption ================= -->
+  <text x="437" y="366" text-anchor="middle" font-size="23" fill="#1971c2">Sub-Vectors of equal size</text>
+
+  <!-- ================= blue converging arrows ================= -->
+  <g stroke="#1971c2" stroke-width="2.4" stroke-linecap="round" fill="none" filter="url(#rough)">
+    <line x1="157" y1="332" x2="412" y2="450" marker-end="url(#blueArrow)"/>
+    <line x1="352" y1="380" x2="428" y2="450" marker-end="url(#blueArrow)"/>
+    <line x1="530" y1="380" x2="458" y2="450" marker-end="url(#blueArrow)"/>
+    <line x1="740" y1="332" x2="478" y2="450" marker-end="url(#blueArrow)"/>
+  </g>
+
+  <!-- ================= concatenated vector ================= -->
+  <g filter="url(#rough)">
+    <rect x="213" y="461" width="449" height="72" rx="14" fill="none" stroke="#1e1e1e" stroke-width="2.2" stroke-dasharray="8 6"/>
+    <rect x="221" y="469" width="104" height="56" rx="9" fill="url(#hatchOlive)" stroke="#1e1e1e" stroke-width="2.2"/>
+    <rect x="331" y="469" width="104" height="56" rx="9" fill="url(#hatchOlive)" stroke="#1e1e1e" stroke-width="2.2"/>
+    <rect x="441" y="469" width="104" height="56" rx="9" fill="url(#hatchOlive)" stroke="#1e1e1e" stroke-width="2.2"/>
+    <rect x="551" y="469" width="104" height="56" rx="9" fill="url(#hatchOlive)" stroke="#1e1e1e" stroke-width="2.2"/>
+  </g>
+  <g font-size="19" fill="#1e1e1e" text-anchor="middle">
+    <text x="273" y="504">u1</text>
+    <text x="383" y="504">u2</text>
+    <text x="493" y="504">u3</text>
+    <text x="603" y="504">u4</text>
+  </g>
+
+  <!-- ================= green arrows ================= -->
+  <g stroke="#2f9e44" stroke-width="2.4" stroke-linecap="round" fill="none" filter="url(#rough)">
+    <line x1="277" y1="538" x2="358" y2="628" marker-end="url(#greenArrow)"/>
+    <line x1="387" y1="538" x2="426" y2="628" marker-end="url(#greenArrow)"/>
+    <line x1="493" y1="538" x2="494" y2="628" marker-end="url(#greenArrow)"/>
+    <line x1="599" y1="538" x2="562" y2="628" marker-end="url(#greenArrow)"/>
+  </g>
+
+  <!-- ================= centroids ================= -->
+  <g stroke="#1e1e1e" stroke-width="2.2" filter="url(#rough)">
+    <circle cx="370" cy="663" r="28" fill="url(#hatchPink)"/>
+    <circle cx="431" cy="663" r="28" fill="url(#hatchGreen)"/>
+    <circle cx="492" cy="663" r="28" fill="url(#hatchBlue)"/>
+    <circle cx="553" cy="663" r="28" fill="url(#hatchYellow)"/>
+  </g>
+  <g font-size="19" fill="#1e1e1e" text-anchor="middle">
+    <text x="370" y="670">c1</text>
+    <text x="431" y="670">c2</text>
+    <text x="492" y="670">c3</text>
+    <text x="553" y="670">c4</text>
+  </g>
+</svg>
